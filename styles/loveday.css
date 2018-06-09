@@ -1,23 +1,24 @@
 body {
-			
-	background-color: #ffffff;
-	font-family: 'Open Sans', 'Trebuchet MS', Helvetica, sans-serif;
-    font-weight: 400;
-	color: black;
+
+	background-color: #2b3e50; /* new bg colour */
+	font-family: 'Source Sans Pro', 'Trebuchet MS', Helvetica, sans-serif;
+    font-weight: 300;
+	color: white;
 }
 
 
 h1, h2, h3,h4,h5{
-    color:#993333;   
+    color:white;
 }
 
 h1{
-    font-size:1.7em; 
-    font-weight:600;
+    font-size:1.7em;
+    font-weight:400;
+		font-family: 'Merriweather'; /*new*/
 }
 
 h2{
-    font-size:1.3em; 
+    font-size:1.3em;
     font-weight:600;
 }
 
@@ -27,17 +28,17 @@ h3{
 }
 
 h1.title{
-    font-size:4em; 
-    font-weight:600;
+    font-size:4em;
+    font-weight:400;
     padding-top:15px;
     margin-bottom:0px;
-    text-shadow: 2px 1px 2px #a5a5a5;
+    /*text-shadow: 2px 1px 2px #a5a5a5;*/
 }
 
 h1.subtitle{
-    font-size:2em; 
+    font-size:2em;
     margin-top:0px;
-    text-shadow: 2px 1px 2px #a5a5a5;
+    /*text-shadow: 2px 1px 2px #a5a5a5;*/
     font-weight:600;
 }
 
@@ -47,53 +48,53 @@ div.content, div.banner {
 			width: 50%
 		}
 
-div.banner{ 
+div.banner{
     text-align: center;
     min-height:150px;
     background-repeat: no-repeat;
 }
 
 div#banner1{
-  background-image: url(../images/bannerNotes2.png);  
+  background-image: url(../images/bannerNotes2.png);
 }
 
 div#banner2{
-  background-image: url(../images/bannerNotes6.png);  
+  background-image: url(../images/bannerNotes6.png);
 }
 
 div#banner3{
-  background-image: url(../images/bannerNotes7.png);  
+  background-image: url(../images/bannerNotes7.png);
 }
 
 div#banner4{
-  background-image: url(../images/bannerNotes8.png);  
+  background-image: url(../images/bannerNotes8.png);
 }
 div#banner5{
-  background-image: url(../images/bannerNotes9.png);  
+  background-image: url(../images/bannerNotes9.png);
 }
 div#banner6{
-  background-image: url(../images/bannerNotes3.png);  
+  background-image: url(../images/bannerNotes3.png);
 }
 
 div#banner7{
-  background-image: url(../images/bannerNotes5.png);  
+  background-image: url(../images/bannerNotes5.png);
 }
 
 div#banner8{
-  background-image: url(../images/bannerNotes1.png);  
+  background-image: url(../images/bannerNotes1.png);
 }
 div.navigation{
       width:100%
 }
 
 div.navigation li a{
-  font-family:'Open Sans', 'Trebuchet MS', Helvetica, sans-serif;
+  font-family:'Source Sans Pro', 'Trebuchet MS', Helvetica, sans-serif; /*new font*/
     font-weight:400;
     font-size:1.2em;
-  color: #993333;
-    text-decoration: none;  
+  color: #ff6a5e; /* new colour */
+    text-decoration: none;
     text-transform: lowercase;
-  text-shadow: 1px 1px 2px #a5a5a5;
+  /*text-shadow: 1px 1px 2px #a5a5a5;*/
 }
 
 
@@ -104,12 +105,12 @@ padding-bottom: 2em;
 	}
 
 div.navigation:after{
-color:#993333;
+color:#ff6a5e; /* new colour */
 content":<hr/>";
 }
 
 div.navigation > ul > li {
-display:inline; 
+display:inline;
 }
 
 div.navigation li.active > a {
@@ -117,19 +118,19 @@ div.navigation li.active > a {
 }
 
 div.navigation ul > li:not(:last-of-type):after{
- font-family:'Open Sans', 'Trebuchet MS', Helvetica, sans-serif;
+ font-family:'Open Sans', 'Trebuchet MS', Helvetica, sans-serif; /* change font here ? */
     font-weight:400;
     font-size:1.2em;
-  color: #993333;
-   
+  color: #993333; /* change colour here ? */
+
  content:" | ";
-} 
+}
 
 p.updated {
 
-	font-family:'Open Sans', 'Trebuchet MS', Helvetica, sans-serif;
+	font-family:'Open Sans', 'Trebuchet MS', Helvetica, sans-serif; /* change font here ? */
     font-size:0.8em;
-	color: #993333;
+	color: #993333; /* change colour here ? */
 }
 
 
@@ -149,8 +150,8 @@ ul.homepage{
 	margin-left: 8em;
 }*/
 
-a:link {color: #993333;}
-a:visited {color: #663333;}
+a:link {color: #ff6a5e;} /* new colour */
+a:visited {color: #ff6a5e;} /* new colour */
 
 a.breadcrumb{
 	text-decoration:underline;
@@ -168,13 +169,13 @@ img.active {
 
 img.nav { /* necessary for IE */
 			border: none;
-		}		
+		}
 
 
 
 div#photos{
     text-align:justify;
-    
+
 }
 
 div#photos a img{
@@ -209,22 +210,22 @@ td.piece{
 
 @media screen and (min-width:600px) and (max-width: 1000px) {
     div.content, div.banner, div.navigation >ul{
-        width:70%;   
+        width:70%;
 	margin-left:15%;
         margin-right:15%;
     }
-	
+
 h1.title{
-    font-size:2.5em; 
+    font-size:2.5em;
 }
 h1.subtitle{
-    font-size:1.9em; 
+    font-size:1.9em;
 
 }
 
 div#photos{
     text-align:center;
-    
+
 }
 
 div#photos a img{
@@ -236,24 +237,24 @@ div#photos a img{
 
 @media screen  and (min-width:200px) and (max-width: 599px){
      div.content, div.banner, div.navigation >ul{
-        width:90%;   
+        width:90%;
 	margin-left:5%;
         margin-right:5%;
     }
 
 h1.title{
-    font-size:2em; 	
+    font-size:2em;
 }
 
 h1.subtitle{
-    font-size:1.8em; 
+    font-size:1.8em;
 
 
 }
 
 div#photos{
     text-align:center;
-    
+
 }
 div#photos a img{
 	max-width:200px;
@@ -270,4 +271,3 @@ ul.works ul{
 
 
 }
-
