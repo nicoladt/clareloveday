@@ -1,10 +1,12 @@
 body {
 
-	background-color: #2b3e50; /* new bg colour */
+	background-color: #23334a; /* new bg colour */
 	font-family: 'Source Sans Pro', 'Trebuchet MS', Helvetica, sans-serif;
-    font-weight: 300;
+   font-weight: 300;
 	color: white;
 }
+
+b{font-weight: 400}
 
 
 h1, h2, h3,h4,h5{
@@ -55,7 +57,7 @@ div.banner{
 }
 
 div#banner1{
-  background-image: url(../images/bannerNotes2.png);
+  background-image: url(../images/bannerNotes2a.png);
 }
 
 div#banner2{
@@ -115,20 +117,22 @@ display:inline;
 
 div.navigation li.active > a {
 	text-decoration:underline;
+	color:white;
 }
 
 div.navigation ul > li:not(:last-of-type):after{
- font-family:'Open Sans', 'Trebuchet MS', Helvetica, sans-serif; /* change font here ? */
+ font-family:'Source Sans Pro', 'Trebuchet MS', Helvetica, sans-serif; /* change font here ? */
     font-weight:400;
     font-size:1.2em;
-  color: #993333; /* change colour here ? */
+		padding: 0.3em;
+  color: #a9a9a9; /* change colour here ? */
 
  content:" | ";
 }
 
 p.updated {
 
-	font-family:'Open Sans', 'Trebuchet MS', Helvetica, sans-serif; /* change font here ? */
+/*	font-family:'Open Sans', 'Trebuchet MS', Helvetica, sans-serif; /* change font here ? */
     font-size:0.8em;
 	color: #993333; /* change colour here ? */
 }
