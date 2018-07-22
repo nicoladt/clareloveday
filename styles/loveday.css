@@ -56,6 +56,7 @@ div.banner{
     background-repeat: no-repeat;
 }
 
+/*
 div#banner1{
   background-image: url(../images/bannerNotes2a.png);
 }
@@ -84,7 +85,7 @@ div#banner7{
 
 div#banner8{
   background-image: url(../images/bannerNotes1.png);
-}
+} */
 div.navigation{
       width:100%
 }
