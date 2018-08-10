@@ -179,13 +179,13 @@ img.nav { /* necessary for IE */
 
 
 div#photos{
-    text-align:justify;
+  text-align:justify;
 
 }
 
 div#photos a img{
     margin:20px;
-	max-width:250px;
+	max-width:40%;
 	max-height:230px;
 }
 
