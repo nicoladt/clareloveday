@@ -19,6 +19,10 @@ h1{
 		font-family: 'Merriweather'; /*new*/
 }
 
+/*h1.title{
+	font-family: 'Cinzel Decorative', cursive;
+}*/
+
 h2{
     font-size:1.3em;
     font-weight:600;
@@ -56,11 +60,11 @@ div.banner{
     background-repeat: no-repeat;
 }
 
-/*
-div#banner1{
-  background-image: url(../images/bannerNotes2a.png);
-}
 
+div#banner1{
+  background-image: url(../images/test.png);
+}
+/*
 div#banner2{
   background-image: url(../images/bannerNotes6.png);
 }
