@@ -138,8 +138,17 @@ div.navigation ul > li:not(:last-of-type):after{
 p.updated {
 
 /*	font-family:'Open Sans', 'Trebuchet MS', Helvetica, sans-serif; /* change font here ? */
-    font-size:0.8em;
+    font-size:1em;
 	color: #993333; /* change colour here ? */
+}
+
+p.performers{
+
+	font-size: 0.8em;
+	font-style: italic;
+	margin-top: 0;
+	padding-top: 0;
+	margin-bottom:1.7em;
 }
 
 div.footer{
@@ -172,9 +181,9 @@ ul.homepage{
 	width: 38em;
 }*/
 
-/*ul.links{
-	margin-left: 8em;
-}*/
+ul.links li{
+	margin-bottom:1em;
+}
 
 a:link {color: #ff6a5e;} /* new colour */
 a:visited {color: #ff6a5e;} /* new colour */
