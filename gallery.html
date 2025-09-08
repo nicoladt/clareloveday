@@ -38,55 +38,32 @@
 </div>
 
 <div class="content">
-<h2>Gallery</h2>
+<h1>Gallery</h1>
 
 
-<div id="photos">
-  <a data-fancybox="gallery" href="images/photos/Clare_Loveday_005.jpg" data-caption="Clare Loveday, 2018"><img src="images/photos/Clare_Loveday_005.jpg"></a>
+<div class="image-grid">
+  <a data-fancybox="gallery" href="images/photos/Clare01.jpg" data-caption=""><img src="images/photos/Clare01.jpg"></a>
 
-  <a data-fancybox="gallery" href="images/photos/Clare_Loveday_004.jpg" data-caption="Clare Loveday, 2018"><img src="images/photos/Clare_Loveday_004.jpg"></a>
+  <a data-fancybox="gallery" href="images/photos/Clare02.jpg" data-caption=""><img src="images/photos/Clare02.jpg"></a>
 
-  <a data-fancybox="gallery" href="images/photos/ClareLoveday.jpg" data-caption="Photo by Masimba Sasa"><img src="images/photos/ClareLoveday.jpg"></a>
+  <a data-fancybox="gallery" href="images/photos/Clare_cello.JPG" data-caption=""><img src="images/photos/Clare_cello.JPG"></a>
 
-  <a data-fancybox="gallery" href="images/photos/old_photos/CharlesBaggotArc.jpg" data-caption="Charles Baggot plays 'Arc'"><img src="images/photos/old_photos/CharlesBaggotArcSC.jpg"></a>
+  <a data-fancybox="gallery" href="images/photos/Clare_doublebass2.JPG" data-caption=""><img src="images/photos/Clare_doublebass2.JPG"></a>
 
-  <a data-fancybox="gallery" href="images/photos/old_photos/CollisionProject1.jpg" data-caption="Barry Sherman, Sisekelo Pila and Vusi Ndebele performing in 'The Collision Project'"><img src="images/photos/old_photos/CollisionProject1SC.jpg"></a>
+    <a data-fancybox="gallery" href="images/photos/Clare_cello2.jpg" data-caption=""><img src="images/photos/Clare_cello2.jpg"></a>
 
-  <!--<a data-fancybox="gallery" href="images/photos/old_photos/EnsembleReconsil1.jpg" data-caption="Ensemble Reconsil in rehearsal, 2007"><img src="images/photos/old_photos/EnsembleReconsil1.jpg"></a>-->
+ <a data-fancybox="gallery" href="images/photos/Clare_doublebass2.JPG" data-caption=""><img src="images/photos/Clare_violin.JPG"></a>
 
-  <a data-fancybox="gallery" href="images/photos/old_photos/RehearsingBlink.jpg" data-caption="Rehearsing 'Blink' in Vienna, 2007"><img src="images/photos/old_photos/RehearsingBlinkSC.jpg"></a>
-
-  <a data-fancybox="gallery" href="images/photos/old_photos/SydneySaxEnsemble.jpg" data-caption="Michael Duke & the Sydney Conservatoire Sax Ensemble rehearse 'Duodectet'"><img src="images/photos/old_photos/SydneySaxEnsembleSC.jpg"></a>
-
-<!--
-<a data-fancybox="gallery" href="images/photos/ClareEasternCape.jpg" data-caption="In the Eastern Cape, South Africa, 2011 "><img src="images/photos/ClareEasternCapeSC.jpg"></a>
+    <a data-fancybox="gallery" href="images/photos/Clare_doublebass.jpg" data-caption=""><img src="images/photos/Clare_doublebass.jpg"></a>
 
 
 
-<a data-fancybox="gallery" href="images/photos/StockholmSaxQuartet.jpg" data-caption="With members of the Stockholm Sax Quartet, 2006"><img src="images/photos/StockholmSaxQuartetSC.jpg"></a>
 
-
- <a data-fancybox="gallery" href="images/photos/CollisionProject2.jpg" data-caption="'The Collision Project'"><img src="images/photos/CollisionProject2SC.jpg"></a>
-
-<a data-fancybox="gallery" href="images/photos/CollisionProject1.jpg" data-caption="Barry Sherman, Sisekelo Pila and Vusi Ndebele performing in 'The Collision Project'"><img src="images/photos/CollisionProject1SC.jpg">
-
-<a data-fancybox="gallery" href="images/photos/EnsembleReconsil1.jpg" data-caption="Ensemble Reconsil in rehearsal, 2007"><img src="images/photos/EnsembleReconsil1SC.jpg"></a>
-
-<a data-fancybox="gallery" href="images/photos/RehearsingBlink.jpg" data-caption="Rehearsing 'Blink' in Vienna, 2007"><img src="images/photos/RehearsingBlinkSC.jpg"></a>
-
- <a data-fancybox="gallery" href="images/photos/Vienna.jpg" data-caption="With Michael Blake and Justinian Tamasuza in Vienna, 2007"><img src="images/photos/ViennaSC.jpg"></a>
-
- <a data-fancybox="gallery" href="images/photos/Visby.jpg" data-caption="With Paul Hanmer and Suk-Jun Kim in Visby, Sweden, 2007"><img src="images/photos/VisbySC.jpg" ></a>
-
- <a data-fancybox="gallery" href="images/photos/FaroeIsland.jpg" data-caption="With Paul Hanmer, Sungeun Kim, Ramon Anthin, Mirjam Tally and Clive Glaser on Faroe Island, Sweden, 2007"><img src="images/photos/FaroeIslandSC.jpg"></a>
-
-
--->
 </div>
 </div>
 <div class="footer">
 <p id="soc-media"><a href="https://soundcloud.com/clareloveday/"><i class="fab fa-soundcloud"></i></a></p>
-  <p id="copyright"> Copyright © Clare Loveday 2019</p>
+  <p id="copyright"> Copyright © Clare Loveday <span id="current-year"></span></p>
 </div>
 </body>
 <script>
@@ -99,4 +76,13 @@
   ga('send', 'pageview');
 
 </script>
+
+<script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const yearSpan = document.getElementById("current-year");
+            const currentYear = new Date().getFullYear();
+            yearSpan.textContent = currentYear;
+        });
+    </script>
+
 </html>

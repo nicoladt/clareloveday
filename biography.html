@@ -33,7 +33,7 @@
 </div>
 
 <div class="content">
-<h2>Biography</h2>
+<h1>Biography</h1>
 <p>
 Clare Loveday is a Johannesburg-based composer whose works have been performed on four
 continents. Striving to convey through music the complications of life in a post-colonial society,
@@ -125,13 +125,13 @@ global south.
 </p><p>
   Clare is actively involved in the new music scene in South Africa. She
   served for many years on the executive committee of NewMusic South Africa, and is currently a
-  Research Associate at the Africa Open Institute for Music, Research and Innovation.</p>
+  Research Associate at the Africa Open Institute for Music, Research and Innovation. She is also a fellow of the Stellenbosch Institute for Advanced Study.</p>
 
 </p>
 </div>
 <div class="footer">
 <p id="soc-media"><a href="https://soundcloud.com/clareloveday/"><i class="fab fa-soundcloud"></i></a></p>
-  <p id="copyright"> Copyright © Clare Loveday 2019</p>
+  <p id="copyright"> Copyright © Clare Loveday <span id="current-year"></span></p>
 </div>
 </body>
 <script>
@@ -144,4 +144,13 @@ global south.
   ga('send', 'pageview');
 
 </script>
+
+<script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const yearSpan = document.getElementById("current-year");
+            const currentYear = new Date().getFullYear();
+            yearSpan.textContent = currentYear;
+        });
+    </script>
+
 </html>

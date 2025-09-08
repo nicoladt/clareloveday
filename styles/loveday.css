@@ -175,6 +175,11 @@ ul {
 
 ul.homepage{
 	list-style-type: disc;
+
+}
+ul.homepage p{
+	padding-left:8px;
+
 }
 
 /*ul.works{
@@ -206,18 +211,62 @@ img.nav { /* necessary for IE */
 			border: none;
 		}
 
+/*Gallery - Resposive grid CSS*/
 
+		/* Container for the image grid */
+		.image-grid {
+		  display: grid;
+		  gap: 1rem; /* Adjust spacing between images as needed */
+		  width: 100%;
+		}
 
-div#photos{
-  text-align:justify;
+		/* Desktop and tablet: table-like grid layout */
+		@media (min-width: 768px) {
+		  .image-grid {
+		    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		    /* Alternative fixed columns approach:
+		       grid-template-columns: repeat(3, 1fr); for 3 columns
+		       grid-template-columns: repeat(4, 1fr); for 4 columns */
+		  }
+		}
 
-}
+		/* Mobile: single column layout */
+		@media (max-width: 767px) {
+		  .image-grid {
+		    grid-template-columns: 1fr;
+		  }
+		}
 
-div#photos a img{
-    margin:20px;
-	max-width:40%;
-	max-height:230px;
-}
+		/* Style the anchor tags */
+		.image-grid a {
+		  display: block;
+		  text-decoration: none;
+		  border-radius: 8px; /* Optional: rounded corners */
+		  overflow: hidden;
+		  transition: transform 0.2s ease;
+		}
+
+		/* Optional hover effect */
+		.image-grid a:hover {
+		  transform: scale(1.02);
+		}
+
+		/* Style the images */
+		.image-grid a img {
+		  width: 100%;
+		  height: auto;
+		  display: block;
+		  object-fit: cover; /* Ensures images maintain aspect ratio */
+		}
+
+		/* Optional: if you want uniform height for all images in desktop/tablet */
+		@media (min-width: 768px) {
+		  .image-grid a img {
+		    height: 200px; /* Set fixed height for table-like appearance */
+		    object-fit: cover;
+		  }
+		}
+
 
 table#recordings td{
 	vertical-align:text-top;
@@ -255,17 +304,6 @@ h1.subtitle{
     font-size:1.9em;
 
 }
-
-div#photos{
-    text-align:center;
-
-}
-
-div#photos a img{
-	max-width:200px;
-}
-
-
 }
 
 @media screen  and (min-width:200px) and (max-width: 599px){
@@ -281,17 +319,8 @@ h1.title{
 
 h1.subtitle{
     font-size:1.8em;
-
-
 }
 
-div#photos{
-    text-align:center;
-
-}
-div#photos a img{
-	max-width:200px;
-}
 
 ul.works{
 	padding-left:15px;
@@ -300,7 +329,4 @@ ul.works{
 ul.works ul{
 	padding-left:10px;
 }
-
-
-
 }

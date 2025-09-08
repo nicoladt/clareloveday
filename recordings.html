@@ -34,7 +34,7 @@
 </div>
 
 <div class="content">
-<h2>Recording excerpts</h2>
+<h1>Recording Excerpts</h1>
 
 <a href="#audio" class="breadcrumb">Audio</a> | <a href="#video" class="breadcrumb">Video</a>
 <h3 id="audio">Audio</h3>
@@ -223,7 +223,7 @@ conducted by Roland Freisitzer</td>
 </div>
 <div class="footer">
 <p id="soc-media"><a href="https://soundcloud.com/clareloveday/"><i class="fab fa-soundcloud"></i></a></p>
-  <p id="copyright"> Copyright © Clare Loveday 2019</p>
+  <p id="copyright"> Copyright © Clare Loveday <span id="current-year"></span></p>
 </div>
 </body>
 <script>
@@ -236,4 +236,13 @@ conducted by Roland Freisitzer</td>
   ga('send', 'pageview');
 
 </script>
+
+<script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const yearSpan = document.getElementById("current-year");
+            const currentYear = new Date().getFullYear();
+            yearSpan.textContent = currentYear;
+        });
+    </script>
+
 </html>
